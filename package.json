@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
-    "@ergosign/storybook-addon-pseudo-states-vue": "0.0.1-alpha.40",
+    "@ergosign/storybook-addon-pseudo-states-vue": "0.0.1-alpha.41",
     "@storybook/addon-actions": "^6.0.12",
     "@storybook/addon-essentials": "^6.0.12",
     "@storybook/addon-links": "^6.0.12",
