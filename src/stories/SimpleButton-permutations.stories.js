@@ -3,12 +3,13 @@ import { PseudoStateOrderDefault } from "@ergosign/storybook-addon-pseudo-states
 import SimpleButton from "../components/SimpleButton.vue"
 
 export default {
-  title: "Simple Button/Pseudo States",
+  title: "Simple Button/Permutations",
   decorators: [withPseudo],
   parameters: {
     withPseudo: {
       pseudo: PseudoStateOrderDefault,
-      attributes: ["disabled", { attr: "appearance", value: "primary" }]
+      attributes: ["disabled"],
+      permutations: [{ label: "Primary",attr: "appearance", value: "primary" }]
     }
   },
   argTypes: {
@@ -24,8 +25,8 @@ const template = (args, { argTypes }) => ({
   template: '<simple-button :label="label" :disabled="disabled" />'
 })
 
-export const PseudoStates = template.bind({})
-PseudoStates.args = {
+export const Permutations = template.bind({})
+Permutations.args = {
   label: "Hello World",
   disabled: false,
   appearance: false
